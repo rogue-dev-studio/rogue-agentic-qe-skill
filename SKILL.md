@@ -8,29 +8,29 @@ description: >-
 
 # Agentic QE - Quality Engineering (Canonical)
 
-**Level: max.** Alias khusus: `shannon` (jalur pentest otonom - tetap butuh izin untuk tes agresif).
+**Level: max.** Special alias: `shannon` (autonomous pentest track - still requires permission for aggressive tests).
 
 ## When to use
 
-- Setelah implementasi / sebelum release
-- Minta test plan, generate tests, coverage, bug report
-- Validasi AC dari `clarity`
+- After implementation / before release
+- Request test plan, generate tests, coverage, bug report
+- Validate AC from `clarity`
 
 ## Procedure
 
 ### 1. Intake
 
-AC/FR, diff area, risiko (auth, data, money).
+AC/FR, diff area, risk (auth, data, money).
 
 ### 2. Strategy matrix
 
-| Layer | Kapan |
+| Layer | When |
 |-------|--------|
-| Unit | logic murni |
+| Unit | pure logic |
 | Integration | API/DB boundaries |
-| E2E | pakai `browser-automation` untuk P0 UI |
-| Exploratory | UX ambigu |
-| Security smoke | authz, injection basics; deep pentest -> track `shannon` + izin user |
+| E2E | use `browser-automation` for P0 UI |
+| Exploratory | ambiguous UX |
+| Security smoke | authz, injection basics; deep pentest -> `shannon` track + user permission |
 
 ### 3. Cases
 
@@ -38,14 +38,14 @@ ID, precondition, steps, expected, priority P0-P2. Map AC -> case IDs.
 
 ### 4. Implement & run
 
-- Ikuti test runner project
-- Catat perintah + hasil di `project/{id}/docs/qa/`
+- Follow project test runner
+- Record commands + results in `project/{id}/docs/qa/`
 
 ### 5. Gate
 
 - P0 covered
-- S1/S2 tidak terbuka tanpa keputusan user
-- Blocker env dijelaskan (bukan silent skip)
+- S1/S2 not open without user decision
+- Env blocker explained (not silent skip)
 
 ## Bug template
 
@@ -60,9 +60,9 @@ ID, precondition, steps, expected, priority P0-P2. Map AC -> case IDs.
 
 ## DoD
 
-- [ ] Matrix AC×tests
-- [ ] P0 executed atau blocker jelas
-- [ ] Laporan di docs/qa
+- [ ] AC×tests matrix
+- [ ] P0 executed or blocker clear
+- [ ] Report in docs/qa
 ## Attribution
 
 <!-- ATTRIBUTION: Rogue Development | https://github.com/rogue-dev-studio | DO-NOT-REMOVE -->
