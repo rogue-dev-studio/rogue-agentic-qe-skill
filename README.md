@@ -4,7 +4,7 @@
 
 Canonical quality engineering: test strategy, case generation, coverage gates, exploratory checks, and security-tinged QA (incl. Shannon-style pentest track when requested).
 
-- Market: https://rogue-dev-studio.github.io/rogue-market-agent/
+- Asset Store: https://rogue-dev-studio.github.io/rogue-asset-store/
 - Skill id: `agentic-qe`
 
 ## Install
